@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Ringoffire
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.8.
@@ -57,3 +58,7 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+=======
+# ringoffire
+Angular based webapp of the popular drinking game
+>>>>>>> 4ff80aa5e13db38fad2f097640fe9f3bd6c25ab9
