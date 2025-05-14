@@ -1,0 +1,79 @@
+.start-screen {
+    background-color: #811A17;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+
+    .card {
+        position: absolute;
+        height: 25vh;
+    }
+
+    .top-left {
+        top: 10rem;
+        left: 10rem;
+        transform: rotate(15deg);
+    }
+
+    .top-right {
+        top: 10rem;
+        right: 10rem;
+        transform: rotate(-15deg);
+    }
+
+    .bottom-left {
+        bottom: 10rem;
+        left: 10rem;
+        transform: rotate(-10deg);
+    }
+
+    .bottom-right {
+        bottom: 10rem;
+        right: 10rem;
+        transform: rotate(10deg);
+    }
+
+}
+
+.start-label-box {
+    position: absolute;
+    left: 0;
+    bottom: 200px;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+        width: 30vw;
+        height: auto;
+
+        &:hover {
+            cursor: pointer;
+            filter: brightness(0.8);
+        }
+    }
+
+    .start-label-text {
+        position: absolute;
+        color: #811A17;
+        font-size: 70px;
+        font-weight: bold;
+        pointer-events: none;
+    }
+}
+
+.start-screen-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+
+    h1 {
+        color: white;
+        font-size: 4rem;
+        margin: 0;
+    }
+}
