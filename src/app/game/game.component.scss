@@ -70,7 +70,28 @@
     bottom: 32px;
 
     .mat-icon {
-        fill: orange !important;
-        color: orange !important;
+        fill: #ccc !important;
+        color: #ccc !important;
     }
+}
+
+.pin-btn{
+    position: absolute;
+    bottom: 32px;
+    right: 100px;
+    left: 100px;
+}
+
+::ng-deep .game-info-card {
+  background-color: #004f4f !important;
+  color: #f0f0f0 !important;
+}
+
+::ng-deep .game-info-card mat-card-title {
+  color: #ccc !important;
+    padding: 16px 16px;
+}
+
+::ng-deep .game-info-card mat-card-content {
+  color: #ccc !important;
 }

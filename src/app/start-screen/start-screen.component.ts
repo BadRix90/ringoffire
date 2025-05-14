@@ -3,7 +3,7 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-start-screen',
-    standalone: false,
+  standalone: false,
   templateUrl: './start-screen.component.html',
   styleUrls: ['./start-screen.component.scss']
 })
