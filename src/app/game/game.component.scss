@@ -2,7 +2,7 @@
     width: 100vw;
     height: 100vh;
     max-width: 100%;
-    background-image: url('/assets/img/board.jpg');
+    background-image: url('../../assets/img/board.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -75,7 +75,7 @@
     }
 }
 
-.pin-btn{
+.pin-btn {
     position: absolute;
     bottom: 32px;
     right: 100px;
@@ -83,15 +83,20 @@
 }
 
 ::ng-deep .game-info-card {
-  background-color: #004f4f !important;
-  color: #f0f0f0 !important;
+    background-color: #004f4f !important;
+    color: #f0f0f0 !important;
 }
 
 ::ng-deep .game-info-card mat-card-title {
-  color: #ccc !important;
+    color: #ccc !important;
     padding: 16px 16px;
 }
 
 ::ng-deep .game-info-card mat-card-content {
-  color: #ccc !important;
+    color: #ccc !important;
 }
+
+
+
+
+

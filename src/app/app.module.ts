@@ -15,11 +15,18 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
-import {MatCardModule} from '@angular/material/card';
+import { MatCardModule } from '@angular/material/card';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { getAuth, provideAuth } from '@angular/fire/auth';
+import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+import { getStorage, provideStorage } from '@angular/fire/storage';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+
+
 
 const routes: Routes = [
   { path: '', component: StartScreenComponent },
-  { path: 'game', component: GameComponent }
+  { path: 'game/:id', component: GameComponent }
 ];
 
 @NgModule({
@@ -43,7 +50,20 @@ const routes: Routes = [
     MatInputModule,
     MatCardModule
   ],
-  providers: [],
+  providers: [
+    { provide: LocationStrategy, useClass: HashLocationStrategy },
+    provideFirebaseApp(() => initializeApp({
+      projectId: "ring-of-fire-4dbec",
+      appId: "1:1080537625640:web:ce419f999d74a24231711d",
+      storageBucket: "ring-of-fire-4dbec.firebasestorage.app",
+      apiKey: "AIzaSyB3lx8XFXHnErBZqTN9Gdloy-zB17pXoc8",
+      authDomain: "ring-of-fire-4dbec.firebaseapp.com",
+      messagingSenderId: "1080537625640"
+    })),
+    provideAuth(() => getAuth()),
+    provideFirestore(() => getFirestore()),
+    provideStorage(() => getStorage())
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
